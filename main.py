@@ -18,7 +18,7 @@ districts_data = {
 df_districts = pd.DataFrame(districts_data)
 
 # Баға динамикасы (2024-2026)
-months = pd.date_range(start='2024-01-01', end='2026-03-01', freq='M')
+months = pd.date_range(start='2024-01-01', end='2026-03-01', freq='MS')
 price_trend = {
     'Date': months,
     '1-room': np.linspace(450000, 580000, len(months)) * (1 + np.random.normal(0, 0.02, len(months))),
